@@ -1,0 +1,20 @@
+# Voici la liste des commandes demandées dans cet exercice
+# Le but est que vous les tapiez vous-même, mais si ça ne marche pas vous
+# pouvez comparer avec les modèles.
+
+echo "Bonjour"
+echo "Bonjour" > `tty`
+
+date
+echo `date`
+echo 'date'
+
+echo 'Bonjour $toto'
+echo "Bonjour $toto"
+echo 'Bonjour $USER'
+echo "Bonjour $USER"
+
+echo `Bonjour $USER`
+
+alias Bonjour='echo Bonjour'
+echo `Bonjour $USER`
