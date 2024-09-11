@@ -48,6 +48,7 @@ void liberer(struct Exo exos[], int n)
     free(exos);
 }
 
+
 int main()
 {
     // todo : appeler creer et liberer
@@ -56,6 +57,7 @@ int main()
     // qui représente un tableau ou une collection doit toujours
     // être au pluriel.
     struct Exo *exos = creer(15);
+
     liberer(exos, 15);
     exos = NULL; // pour qu'on ne puisse plus utiliser la variable
     
