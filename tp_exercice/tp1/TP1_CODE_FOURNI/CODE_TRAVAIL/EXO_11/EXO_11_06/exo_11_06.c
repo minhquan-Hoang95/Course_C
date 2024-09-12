@@ -6,9 +6,15 @@ int main()
 {
     int tab[5] = {1, 2, 3, 4, 5};
     int * autreTab = malloc(5 * sizeof(int));
-    autreTab = tab;
+       // autreTab = tab;
+    for (int i = 0; i < 5; i++)
+        autreTab[i] = tab[i];
+
+    for (int i = 0; i < 5; i++)
+        printf("%d\n", autreTab[i]);  
+
     // ...
-    //free(autreTab);    // BOUM !
+    free(autreTab);    // BOUM !
     return EXIT_SUCCESS;
 }
 
